@@ -2,7 +2,8 @@
 
 <div class="side-header">
   <div class="header-name">
-    <a href="#">ユーザー</a>
+    <%= link_to current_user.name, edit_user_path(current_user.id) %>
+    <%# <a href="#">ユーザー</a> %>
   </div>
   <div class="create-room">
     <a href="#">チャットを作成する</a>
